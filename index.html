@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script src="/spark-md5.min.js"></script>
+</head>
+
+<body>
+  <div id="upload-files">
+    <div class="but-list">
+      <div>
+        <label class="upload-but p12" for="file">Upload files</label>
+        <input style="display: none;" type="file" id="file" name="file" multiple onclick="this.value=null;">
+      </div>
+      <button id="start-all" class="upload-but p12">All Start</button>
+      <button id="stop-all" class="upload-but p12">All Stop</button>
+    </div>
+    <div class="upload-result"></div>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
